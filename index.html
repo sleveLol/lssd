@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[LSSD] Los Santos Sheriff's Department</title>
+    <style>
+        /* Reset and Base Styles */
+        body {
+            font-family: "Arial", sans-serif;
+            background: url('https://i.imgur.com/516I1GX.png') no-repeat center center fixed;
+            background-size: cover;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            overflow-x: hidden;
+        }
+
+        /* Container for overall layout */
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent */
+            border: 2px solid #000;
+            box-shadow: 0px 0px 20px rgba(0,0,0,0.5);
+            overflow: hidden;
+        }
+
+        /* Header replaced by banner image */
+        .header {
+            position: relative;
+            overflow: hidden;
+            height: 150px; /* Adjusted height for better fit */
+            background: url('https://i.imgur.com/0wdb5vN.png') no-repeat center center;
+            background-size: cover;
+        }
+
+        /* Marquee Styling */
+        .marquee-container {
+            background-color: #262626;
+            color: #ffcc00;
+            font-weight: bold;
+            font-size: 20px; /* Adjust font size for better alignment */
+            padding: 10px 0;
+            z-index: 1;
+            overflow: hidden;
+            position: relative;
+        }
+
+        /* Navigation bar styling */
+        .nav {
+            background-color: #222;
+            color: #fff;
+            padding: 15px; /* Reduced padding for tighter look */
+            text-align: center;
+            font-size: 18px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .nav a {
+            color: #ccc;
+            margin: 0 15px; /* Reduced margin for better spacing */
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        .nav a:hover {
+            color: #fff;
+        }
+
+        /* Main content area with the sidebar */
+        .main {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 20px; /* Reduced padding for more content space */
+        }
+
+        .content {
+            flex: 3;
+            padding-right: 20px; /* Reduced padding */
+            border-right: 2px solid #ccc;
+        }
+
+        .content h2 {
+            color: #333;
+            font-size: 28px; /* Adjusted font size for balance */
+            margin-bottom: 10px;
+        }
+
+        .content p {
+            font-size: 16px; /* Adjusted font size for readability */
+            line-height: 1.6;
+            margin-bottom: 15px; /* Reduced margin */
+        }
+
+        .content img {
+            width: 100%;
+            height: auto;
+            margin: 10px 0; /* Reduced margin */
+            border: 5px solid #222222; /* Grey border */
+        }
+
+        .sidebar {
+            flex: 2;
+            padding-left: 20px; /* Reduced padding */
+        }
+
+        .sidebar .box {
+            background-color: #f4f4f4;
+            margin-bottom: 20px; /* Adjusted margin for balance */
+            border: 2px solid #aaa; /* Grey border for consistency */
+            text-align: center;
+            padding: 10px; /* Reduced padding for compact layout */
+            box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .sidebar .box h3 {
+            background-color: #333;
+            color: #fff;
+            padding: 5px; /* Adjusted padding for style */
+            margin: 0;
+            font-size: 18px; /* Adjusted font size for consistency */
+        }
+
+        .sidebar .box p {
+            padding: 10px;
+            font-size: 14px; /* Adjusted font size for clarity */
+        }
+
+        .sidebar .box img {
+            width: 100%;
+            height: auto;
+            border: 5px solid #222222; /* Grey border */
+            margin: 5px 0; /* Reduced margin for images */
+        }
+
+        /* Footer styling */
+        .footer {
+            background-color: #333;
+            color: #ccc;
+            text-align: center;
+            padding: 15px; /* Adjusted padding for consistent look */
+            font-size: 14px; /* Adjusted font size for style */
+        }
+
+        .footer a {
+            color: #ffcc00;
+            text-decoration: none;
+        }
+.button {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 18px;
+    color: #fff;
+    background-color: #1a73e8; /* A blue color that matches typical website schemes */
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.button:hover {
+    background-color: #135cb5; /* Darker blue on hover */
+    transform: translateY(-3px);
+}
+
+.button:active {
+    background-color: #0d3f82; /* Even darker blue when active */
+    transform: translateY(0);
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <!-- Header banner image -->
+        </div>
+
+        <div class="marquee-container">
+            <marquee behavior="scroll" direction="left" scrollamount="10">
+                Welcome to the official website of the Los Santos Sheriff's Department! Join us in maintaining law and some order in Los Santos. 
+            </marquee>
+        </div>
+
+        <div class="nav">
+            <a href="index.html">Home</a> |
+            <a href="">About Us</a> |
+            <a href="">Report a Crime</a> |
+            <a href="">Contact</a>
+        </div>
+
+        <div class="main">
+            <div class="content">
+                <img src="https://i.imgur.com/lGrDriJ.png" alt="LSSD Officers">
+                <h2>Los Santos Sheriff's Department is Hiring!</h2>
+                <p>
+                    Crime is at an all-time high in Los Santos, so what better time to sign up to the leading crime-stopping unit in the entire city? Put your life on the line for starter pay and experience the immense satisfcation of wasting a criminal and then twerking on his lifeless corpse! If you're lucky, his final words will be calling your Mom a hoe. If this sounds like your kind of party, hit the button below.
+                </p>
+                <p>
+                    We pride ourselves on keeping the streets of Los Santos safe, and having fun while doing it. Anything goes. Drive drunk, blur the lines between civilian and criminal, hurl abuse at a neutralised suspect.
+                </p>
+<p>
+    <a href="https://discord.gg/BQSuVcysvZ" class="button">Don't delay, get a free gun today!</a>
+</p>
+ <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/9ccc269e-273c-4dfb-97c4-667cfae749f0/dg3r2d9-d3abd99e-6338-4f25-ab08-47df47e50fec.png/v1/fill/w_1280,h_720,q_80,strp/crime_scene____gta_online__by_vicenzovegas21_dg3r2d9-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NzIwIiwicGF0aCI6IlwvZlwvOWNjYzI2OWUtMjczYy00ZGZiLTk3YzQtNjY3Y2ZhZTc0OWYwXC9kZzNyMmQ5LWQzYWJkOTllLTYzMzgtNGYyNS1hYjA4LTQ3ZGY0N2U1MGZlYy5wbmciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.Ypc-lJlMu1macRt4VuFrswmX1BeBzzZIRZNFCqIDJW8" alt="LSSD Officers">
+                <h2>Massive loss of Sheriff life last weekend.</h2>
+                <p>
+                    As violent crime rates continue to soar, Los Santos has witnessed it's most brutal, orchestrated attack on Cops ever.
+
+On Friday 16th, LSSD responded to a call to Grove street where The Ballas gang set an ambush. Opening fire almost immediately, the two responding Officers sadly passed instantly.
+<br>
+In response, the entire Sheriff's department were mobilised to the scene resulting in a 7 hour long gunfight. Unfortunately, the Ballas came out on top. Over 96% of the Sheriff's Department tragically lost their lives.
+<br>
+With no end to the increasing crime rate in sight, anyone would be an idiot to sign up now..
+                </p>
+
+
+
+
+            </div>
+            
+            <div class="sidebar">
+                <div class="box">
+                    <h3>LSSD Videos</h3>
+                    <img src="https://live.staticflickr.com/517/19926085646_19f4d1e4ef_b.jpg" alt="LSSD Video">
+                    <p>Subscribe to our YouTube channel to see folk get shot.</p>
+                </div>
+                <div class="box">
+                    <h3>Missing Person</h3>
+                    <img src="https://img.youtube.com/vi/s0pWcKtEabA/mqdefault.jpg" alt="Missing Person">
+                    <p>There is no point in reporting it; they're gone.</p>
+                </div>
+                <div class="box">
+                    <h3>Threat Level</h3>
+                    <img src="https://static.wikia.nocookie.net/gtawiki/images/5/5a/Military_GTAV_Soldiers.png/revision/latest?cb=20170225101559" alt="Threat Level Icon">
+                    <p>Current threat level: <strong>EXTREMELY INSANELY HIGH</strong></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>© 2024 City of Los Santos | <a href="#">Privacy Policy</a></p>
+        </div>
+    </div>
+</body>
+</html>
